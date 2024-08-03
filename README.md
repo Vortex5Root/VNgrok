@@ -1,6 +1,6 @@
 <h1 align="center">Load Balacer SSHTunnel</h1>
 <p align="center">
-    <a href="https://github.com/Vortex5Root/Loadbalacer-SSHTunnel/blob/master/LICENSE"><img src="https://img.shields.io/github/license/Vortex5Root/Loadbalacer-SSHTunnel.svg" alt="License">
+    <a href="https://github.com/Vortex5Root/Loadbalacer-SSHTunnel/blob/main/LICENSE"><img src="https://img.shields.io/github/license/Vortex5Root/Loadbalacer-SSHTunnel.svg" alt="License">
     <a href="https://github.com/Vortex5Root/Loadbalacer-SSHTunnel/releases"><img src="https://img.shields.io/github/downloads/Vortex5Root/Loadbalacer-SSHTunnel/total.svg" alt="GitHub all releases"></a><br>
     <a href="https://github.com/Vortex5Root/Loadbalacer-SSHTunnel/network"><img src="https://img.shields.io/github/forks/Vortex5Root/Loadbalacer-SSHTunnel.svg" alt="GitHub forks"></a>
     <a href="https://github.com/Vortex5Root/Loadbalacer-SSHTunnel/stargazers"><img src="https://img.shields.io/github/stars/Vortex5Root/Loadbalacer-SSHTunnel.svg" alt="GitHub stars"></a>
