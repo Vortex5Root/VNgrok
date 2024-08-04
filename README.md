@@ -18,6 +18,20 @@
 | --- | --- |
 | **Trying to expose your services in a way that you don't have to expose your local IP and changing ports without switching off your services** | **We solved this problem by creating a wrapper in the SSH tunnel function to allow to host services** |
 
+<h2 align="center"> Index </h2>
+
+| Topic | Sub-Topic |
+| --- | --- |
+| [Dependencies](#dependencies) | |
+| [How To Install](#how-to-install) | |
+| [How To Use](#how-to-use) | |
+| | [To start a new tunnel use:](#to-start-a-new-tunnel-use) |
+| | [To stop the Tunnel run this command:](#to-stop-the-tunnel-run-this-command) |
+| | [To list all the open tunnels run:](#to-list-all-the-open-tunnels-run) |
+| | [To exit the program run:](#to-exit-the-program-run) |
+| [Aknowledgements](#aknowledgements) | |
+| [Conclusion](#conclusion) | |
+
 <h2 align="center">Dependencies</h2>
 
 | Name | Version | Description |
@@ -58,7 +72,7 @@ cd ssh_tunnel && python3 __init__.py
 <h3 align="center"> To start a new tunnel use:</h3>
 
 ```bash
-new <local_host> <local_port> <remote_port> <listening_host> <listening_port>
+$> new <local_host> <local_port> <remote_port> <listening_host> <listening_port>
 ```
 
 Note:
@@ -71,19 +85,19 @@ Note:
 <h3 align="center"> To stop the Tunnel run this command:</h3>
 
 ```bash
-stop <remote_port>
+$> stop <remote_port>
 ```
 
 <h3 align="center"> To list all the open tunnels run:</h3>
 
 ```bash
-list
+$> list
 ```
 
 <h3 align="center"> To exit the program run:</h3>
 
 ```bash
-exit 
+$> exit 
 ```
 
 <h2 align="center"> Aknowledgements </h2>
