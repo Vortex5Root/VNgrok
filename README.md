@@ -55,6 +55,8 @@ cd ssh_tunnel && python3 __init__.py
 
 3. After you run the Tunnel you are going to be prompted of what commands you want to run this are the following options:
 
+<h3 align="center"> To start a new tunnel use:</h3>
+
 ```bash
 new <local_host> <local_port> <remote_port> <listening_host> <listening_port>
 ```
@@ -66,17 +68,17 @@ Note:
 - **<listening_host>**: The listening host is the IP that you want to listen to receive connections.
 - **<listening_port>**: The listening port is the port that you want to receive connections.
 
-To stop the Tunnel run this command:
+<h3 align="center"> To stop the Tunnel run this command:</h3>
 ```bash
 stop <remote_port>
 ```
 
-To list all the open tunnels run:
+<h3 align="center"> To list all the open tunnels run:</h3>
 ```bash
 list
 ```
 
-To exit the program run:
+<h3 align="center"> To exit the program run:</h3>
 ```bash
 exit 
 ```
