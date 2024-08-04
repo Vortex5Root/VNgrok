@@ -58,6 +58,8 @@ cd ssh_tunnel && python3 __init__.py
 ```bash
 new <local_host> <local_port> <remote_port> <listening_host> <listening_port>
 ```
+
+Note:
 - **<local_host>**: The IP of the server that you want to expose to the internet.
 - **<local_port>**: The port of the server that you want to expose to the internet.
 - **<remote_port>**: The remote port is the port responsible to host your server locally on the remote host.
