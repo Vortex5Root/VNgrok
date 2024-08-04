@@ -1,58 +1,113 @@
-<h1 align="center">Load Balacer SSHTunnel</h1>
+<h1 align="center">Load Balancer SSHTunnel</h1>
 <p align="center">
-    <a href="https://github.com/Vortex5Root/Loadbalacer-SSHTunnel/blob/master/LICENSE"><img src="https://img.shields.io/github/license/Vortex5Root/Loadbalacer-SSHTunnel.svg" alt="License">
-    <a href="https://github.com/Vortex5Root/Loadbalacer-SSHTunnel/releases"><img src="https://img.shields.io/github/downloads/Vortex5Root/Loadbalacer-SSHTunnel/total.svg" alt="GitHub all releases"></a><br>
-    <a href="https://github.com/Vortex5Root/Loadbalacer-SSHTunnel/network"><img src="https://img.shields.io/github/forks/Vortex5Root/Loadbalacer-SSHTunnel.svg" alt="GitHub forks"></a>
-    <a href="https://github.com/Vortex5Root/Loadbalacer-SSHTunnel/stargazers"><img src="https://img.shields.io/github/stars/Vortex5Root/Loadbalacer-SSHTunnel.svg" alt="GitHub stars"></a>
-    <a href="https://github.com/Vortex5Root/Loadbalacer-SSHTunnel/watchers"><img src="https://img.shields.io/github/watchers/Vortex5Root/Loadbalacer-SSHTunnel.svg" alt="GitHub watchers"></a><br>
-    <a href="https://github.com/Vortex5Root/Loadbalacer-SSHTunnel/issues"><img src="https://img.shields.io/github/issues/Vortex5Root/Loadbalacer-SSHTunnel.svg" alt="GitHub issues"></a>
-    <a href="https://github.com/Vortex5Root/Loadbalacer-SSHTunnel/pulls"><img src="https://img.shields.io/github/issues-pr/Vortex5Root/Loadbalacer-SSHTunnel.svg" alt="GitHub pull requests"></a>
-    <a href="https://github.com/Vortex5Root/Loadbalacer-SSHTunnel/commits/master"><img src="https://img.shields.io/github/last-commit/Vortex5Root/Loadbalacer-SSHTunnel.svg" alt="GitHub last commit"></a>
+    <a href="https://github.com/Vortex5Root/Loadbalancer-SSHTunnel/blob/master/LICENSE"><img src="https://img.shields.io/github/license/Vortex5Root/Loadbalancer-SSHTunnel.svg" alt="License">
+    <a href="https://github.com/Vortex5Root/Loadbalancer-SSHTunnel/releases"><img src="https://img.shields.io/github/downloads/Vortex5Root/Loadbalancer-SSHTunnel/total.svg" alt="GitHub all releases"></a><br>
+    <a href="https://github.com/Vortex5Root/Loadbalancer-SSHTunnel/network"><img src="https://img.shields.io/github/forks/Vortex5Root/Loadbalancer-SSHTunnel.svg" alt="GitHub forks"></a>
+    <a href="https://github.com/Vortex5Root/Loadbalancer-SSHTunnel/stargazers"><img src="https://img.shields.io/github/stars/Vortex5Root/Loadbalancer-SSHTunnel.svg" alt="GitHub stars"></a>
+    <a href="https://github.com/Vortex5Root/Loadbalancer-SSHTunnel/watchers"><img src="https://img.shields.io/github/watchers/Vortex5Root/Loadbalancer-SSHTunnel.svg" alt="GitHub watchers"></a><br>
+    <a href="https://github.com/Vortex5Root/Loadbalancer-SSHTunnel/issues"><img src="https://img.shields.io/github/issues/Vortex5Root/Loadbalancer-SSHTunnel.svg" alt="GitHub issues"></a>
+    <a href="https://github.com/Vortex5Root/Loadbalancer-SSHTunnel/pulls"><img src="https://img.shields.io/github/issues-pr/Vortex5Root/Loadbalancer-SSHTunnel.svg" alt="GitHub pull requests"></a>
+    <a href="https://github.com/Vortex5Root/Loadbalancer-SSHTunnel/commits/master"><img src="https://img.shields.io/github/last-commit/Vortex5Root/Loadbalancer-SSHTunnel.svg" alt="GitHub last commit"></a>
 </p>
 
-# Introduction
+<h2 align="center">Introduction</h2>
 
-> **Loadbalacer-SSHTunnel** 
+> LoadBalancer-SSHTunnel is a program that creates a wrapper in the SSH tunnel function that allows you to host services without exposing your local ip address and also allows for you to switch ports without switching off your services. 
 
 | Problem | Solution |
 | --- | --- |
-| **Problem 1** | **Solution 1** |
+| **Trying to expose your services in a way that you don't have to expose your local IP and changing ports without switching off your services** | **We solved this problem by creating a wrapper in the SSH tunnel function to allow to host services** |
 
-# How to install
+<h2 align="center"> Index </h2>
+
+| Topic | Sub-Topic |
+| --- | --- |
+| [Dependencies](#dependencies) | |
+| [How To Install](#how-to-install) | |
+| [How To Use](#how-to-use) | |
+| | [To start a new tunnel use:](#to-start-a-new-tunnel-use) |
+| | [To stop the Tunnel run this command:](#to-stop-the-tunnel-run-this-command) |
+| | [To list all the open tunnels run:](#to-list-all-the-open-tunnels-run) |
+| | [To exit the program run:](#to-exit-the-program-run) |
+| [Aknowledgements](#aknowledgements) | |
+| [Conclusion](#conclusion) | |
+
+<h2 align="center">Dependencies</h2>
+
+| Name | Version | Description |
+| --- | --- | --- |
+| [![Linux](https://img.shields.io/badge/Linux-A81D33?style=for-the-badge&logo=linux&logoColor=ffffff)](https://www.linux.org/) | 5.14.0 | Linux is a family of open-source Unix-like operating systems based on the Linux kernel. |
+| [![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=ffdd54)](https://www.python.org/) | >=3.11 | Python is an interpreted high-level general-purpose programming language. |
+| [![Poetry](https://img.shields.io/endpoint?url=https://python-poetry.org/badge/v0.json?style=for-the-badge)](https://python-poetry.org/) | 1.1.8 | Poetry is a tool for dependency management and packaging in Python. |
+
+<h2 align="center">How To Install</h2>
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/Vortex5Root/Loadbalacer-SSHTunnel.git
+git clone https://github.com/Vortex5Root/Loadbalancer-SSHTunnel.git
 ```
 
 2. Change the directory:
 ```bash
-cd Loadbalacer-SSHTunnel
+cd Loadbalancer-SSHTunnel
 ```
 
-3. Run the installation script:
+<h2 align="center">How To Use</h2>
+
+1. After you CD into the directory (like in above) do the following commands:
+
 ```bash
-make
+poetry install
+poetry shell
 ```
 
-# Aknowledgements
+2. After you do the above commands run the Tunnel:
 
-[Coder]
+```bash
+cd ssh_tunnel && python3 __init__.py
+```
 
-<a href="https://github.com/Vortex5Root">
-    <div style="display: flex; justify-content: center; align-items: center; height: 100px; width: 450px;">
-        <img src=https://avatars.githubusercontent.com/u/102427260?s=200&v=4 width=50 style="border-radius: 50%;">
-        <a href="https://github.com/Vortex5Root">Vortex5Root <br><b>        {Full-Stack Software Engineer}</b></a>
-    </div>
-</a>
+3. After you run the Tunnel you are going to be prompted of what commands you want to run this are the following options:
 
-[Contributor]
+<h3 align="center">To start a new tunnel use</h3>
 
-<a href="https://github.com/PandemicOfNukes">
-    <div style="display: flex; justify-content: center; align-items: center; height: 100px; width: 450px;">
-        <img src=https://avatars.githubusercontent.com/u/59929476?s=200&v=4 width=50 style="border-radius: 50%;">
-        <a href="https://github.com/PandemicOfNukes">PandemicOfNukes <br><b>        {}</b></a>
-    </div>
-</a>
+```bash
+$> new <local_host> <local_port> <remote_port> <listening_host> <listening_port>
+```
 
-# Conclusion
+Note:
+- **<local_host>**: The IP of the server that you want to expose to the internet.
+- **<local_port>**: The port of the server that you want to expose to the internet.
+- **<remote_port>**: The remote port is the port responsible to host your server locally on the remote host.
+- **<listening_host>**: The listening host is the IP that you want to listen to receive connections.
+- **<listening_port>**: The listening port is the port that you want to receive connections.
+
+<h3 align="center">To stop the Tunnel run this command</h3>
+
+```bash
+$> stop <remote_port>
+```
+
+<h3 align="center">To list all the open tunnels run</h3>
+
+```bash
+$> list
+```
+
+<h3 align="center">To exit the program run</h3>
+
+```bash
+$> exit 
+```
+
+<h2 align="center">Aknowledgements</h2>
+
+<p align="center">
+    <br>[Coder]<br>
+    <a href="https://github.com/Vortex5Root"><img src=https://avatars.githubusercontent.com/u/102427260?s=200&v=4 width=50 style="border-radius: 50%;"><br>Vortex5Root <br><b>        {Full-Stack Software Engineer}</b></a><br>
+    <br>[Contributor]<br>
+    <a href="https://github.com/PandemicOfNukes"><img src=https://avatars.githubusercontent.com/u/59929476?s=200&v=4 width=50 style="border-radius: 50%;"><br>PandemicOfNukes <br><b>        {Student}</b></a><br><br>
+</p>
+
+<h2 align="center">Conclusion</h2>
+As you can see, we made an efficient to create a wrapper in the SSH tunnel function that allows you to create your services without exposing yourself and allows the administrator to switch ports with no downtime.
