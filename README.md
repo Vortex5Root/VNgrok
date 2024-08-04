@@ -38,7 +38,7 @@ git clone https://github.com/Vortex5Root/Loadbalancer-SSHTunnel.git
 cd Loadbalancer-SSHTunnel
 ```
 
-h2 align="center"> How To Use </h2>
+<h2 align="center"> How To Use </h2>
 
 <h2 align="center"> Aknowledgements </h2>
 
