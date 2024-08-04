@@ -12,7 +12,7 @@
 
 <h2 align="center">Introduction</h2>
 
-> **Loadbalacer-SSHTunnel** 
+> LoadBalancer-SSHTunnel is a program that creates a wrapper in the SSH tunnel function that allows you to host services without exposing your local ip address and also allows for you to switch ports without switching off your services. 
 
 | Problem | Solution |
 | --- | --- |
@@ -28,11 +28,6 @@ git clone https://github.com/Vortex5Root/Loadbalacer-SSHTunnel.git
 2. Change the directory:
 ```bash
 cd Loadbalacer-SSHTunnel
-```
-
-3. Run the installation script:
-```bash
-make
 ```
 
 <h2 align="center"> Aknowledgements </h2>
