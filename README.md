@@ -37,22 +37,11 @@ make
 
 <h2 align="center"> Aknowledgements </h2>
 
-[Coder]
-
-<a href="https://github.com/Vortex5Root">
-    <div style="display: flex; justify-content: center; align-items: center; height: 100px; width: 450px;">
-        <img src=https://avatars.githubusercontent.com/u/102427260?s=200&v=4 width=50 style="border-radius: 50%;">
-        <a href="https://github.com/Vortex5Root">Vortex5Root <br><b>        {Full-Stack Software Engineer}</b></a>
-    </div>
-</a>
-
-[Contributor]
-
-<a href="https://github.com/PandemicOfNukes">
-    <div style="display: flex; justify-content: center; align-items: center; height: 100px; width: 450px;">
-        <img src=https://avatars.githubusercontent.com/u/59929476?s=200&v=4 width=50 style="border-radius: 50%;">
-        <a href="https://github.com/PandemicOfNukes">PandemicOfNukes <br><b>        {Student}</b></a>
-    </div>
-</a>
+<p align="center">
+    <br>[Coder]<br>
+    <a href="https://github.com/Vortex5Root"><img src=https://avatars.githubusercontent.com/u/102427260?s=200&v=4 width=50 style="border-radius: 50%;"><br>Vortex5Root <br><b>        {Full-Stack Software Engineer}</b></a><br>
+    <br>[Contributor]<br>
+    <a href="https://github.com/PandemicOfNukes"><img src=https://avatars.githubusercontent.com/u/59929476?s=200&v=4 width=50 style="border-radius: 50%;"><br>PandemicOfNukes <br><b>        {Student}</b></a><br><br>
+</p>
 
 <h2 align="center"> Conclusion </h2>
