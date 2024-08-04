@@ -25,10 +25,10 @@
 | [Dependencies](#dependencies) | |
 | [How To Install](#how-to-install) | |
 | [How To Use](#how-to-use) | |
-| | [To start a new tunnel use:](#to-start-a-new-tunnel-use) |
-| | [To stop the Tunnel run this command:](#to-stop-the-tunnel-run-this-command) |
-| | [To list all the open tunnels run:](#to-list-all-the-open-tunnels-run) |
-| | [To exit the program run:](#to-exit-the-program-run) |
+| | [To start a new tunnel use:](#to-start-a-new-tunnel-use:) |
+| | [To stop the Tunnel run this command:](#to-stop-the-tunnel-run-this-command:) |
+| | [To list all the open tunnels run:](#to-list-all-the-open-tunnels-run:) |
+| | [To exit the program run:](#to-exit-the-program-run:) |
 | [Aknowledgements](#aknowledgements) | |
 | [Conclusion](#conclusion) | |
 
