@@ -16,7 +16,7 @@
 
 | Problem | Solution |
 | --- | --- |
-| **Problem 1** | **Solution 1** |
+| **Trying to expose your services in a way that you don't have to expose your local IP and changing ports without switching off your services** | **We solved this problem by creating a wrapper in the SSH tunnel function to allow to host services** |
 
 # How to install
 
@@ -51,7 +51,7 @@ make
 <a href="https://github.com/PandemicOfNukes">
     <div style="display: flex; justify-content: center; align-items: center; height: 100px; width: 450px;">
         <img src=https://avatars.githubusercontent.com/u/59929476?s=200&v=4 width=50 style="border-radius: 50%;">
-        <a href="https://github.com/PandemicOfNukes">PandemicOfNukes <br><b>        {}</b></a>
+        <a href="https://github.com/PandemicOfNukes">PandemicOfNukes <br><b>        {Student}</b></a>
     </div>
 </a>
 
