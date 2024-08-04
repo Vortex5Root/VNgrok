@@ -42,14 +42,14 @@
 
 <h2 align="center">How To Install</h2>
 
-1. Clone the repository:
+[![Poetry](https://img.shields.io/endpoint?url=https://python-poetry.org/badge/v0.json)](https://python-poetry.org/)
 ```bash
-git clone https://github.com/Vortex5Root/Loadbalancer-SSHTunnel.git
+poetry add git+https://github.com/Vortex5Root/Loadbalancer-SSHTunnel.git
 ```
 
-2. Change the directory:
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ```bash
-cd Loadbalancer-SSHTunnel
+pip install git+https://github.com/Vortex5Root/Loadbalancer-SSHTunnel.git#egg=vngrok
 ```
 
 <h2 align="center">How To Use</h2>
