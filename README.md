@@ -26,7 +26,7 @@
 | [![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=ffdd54)](https://www.python.org/) | 3.9.7 | Python is an interpreted high-level general-purpose programming language. |
 | [![Poetry](https://img.shields.io/endpoint?url=https://python-poetry.org/badge/v0.json?style=for-the-badge)](https://python-poetry.org/) | 1.1.8 | Poetry is a tool for dependency management and packaging in Python. |
 
-<h3 align="center"> How to install </h3>
+<h2 align="center"> How to install </h2>
 
 1. Clone the repository:
 ```bash
