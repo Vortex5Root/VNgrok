@@ -69,16 +69,19 @@ Note:
 - **<listening_port>**: The listening port is the port that you want to receive connections.
 
 <h3 align="center"> To stop the Tunnel run this command:</h3>
+
 ```bash
 stop <remote_port>
 ```
 
 <h3 align="center"> To list all the open tunnels run:</h3>
+
 ```bash
 list
 ```
 
 <h3 align="center"> To exit the program run:</h3>
+
 ```bash
 exit 
 ```
