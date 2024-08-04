@@ -1,10 +1,9 @@
 [tool.poetry]
-name = "ngrokv-1-2-7"
+name = "vngrok"
 version = "0.1.0"
 description = ""
 authors = ["Vortex5Root"]
 readme = "README.md"
-packages = [{include = "ngrokv_1"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
