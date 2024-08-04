@@ -39,17 +39,22 @@ cd Loadbalancer-SSHTunnel
 ```
 
 <h2 align="center"> How To Use </h2>
+
 1. After you CD into the directory (like in above) do the following commands:
+
 ```bash
 poetry install
 poetry shell
 ```
+
 2. After you do the above commands run the Tunnel:
+
 ```bash
 cd ssh_tunnel && python3 __init__.py
 ```
 
 3. After you run the Tunnel you are going to be prompted of what commands you want to run this are the following options:
+
 ```bash
 new <local_host> <local_port> <remote_port> <listening_host> <listening_port>
 ```
@@ -66,12 +71,12 @@ stop <remote_port>
 
 To list all the open tunnels run:
 ```bash
-list #
+list
 ```
 
 To exit the program run:
 ```bash
-exit #
+exit 
 ```
 
 <h2 align="center"> Aknowledgements </h2>
