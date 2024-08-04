@@ -40,7 +40,7 @@
 | [![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=ffdd54)](https://www.python.org/) | >=3.11 | Python is an interpreted high-level general-purpose programming language. |
 | [![Poetry](https://img.shields.io/endpoint?url=https://python-poetry.org/badge/v0.json?style=for-the-badge)](https://python-poetry.org/) | 1.1.8 | Poetry is a tool for dependency management and packaging in Python. |
 
-<h2 align="center"> How To Install </h2>
+<h2 align="center">How To Install</h2>
 
 1. Clone the repository:
 ```bash
@@ -52,7 +52,7 @@ git clone https://github.com/Vortex5Root/Loadbalancer-SSHTunnel.git
 cd Loadbalancer-SSHTunnel
 ```
 
-<h2 align="center"> How To Use </h2>
+<h2 align="center">How To Use</h2>
 
 1. After you CD into the directory (like in above) do the following commands:
 
@@ -69,7 +69,7 @@ cd ssh_tunnel && python3 __init__.py
 
 3. After you run the Tunnel you are going to be prompted of what commands you want to run this are the following options:
 
-<h3 align="center"> To start a new tunnel use:</h3>
+<h3 align="center">To start a new tunnel use</h3>
 
 ```bash
 $> new <local_host> <local_port> <remote_port> <listening_host> <listening_port>
@@ -82,25 +82,25 @@ Note:
 - **<listening_host>**: The listening host is the IP that you want to listen to receive connections.
 - **<listening_port>**: The listening port is the port that you want to receive connections.
 
-<h3 align="center"> To stop the Tunnel run this command</h3>
+<h3 align="center">To stop the Tunnel run this command</h3>
 
 ```bash
 $> stop <remote_port>
 ```
 
-<h3 align="center"> To list all the open tunnels run</h3>
+<h3 align="center">To list all the open tunnels run</h3>
 
 ```bash
 $> list
 ```
 
-<h3 align="center"> To exit the program run</h3>
+<h3 align="center">To exit the program run</h3>
 
 ```bash
 $> exit 
 ```
 
-<h2 align="center"> Aknowledgements </h2>
+<h2 align="center">Aknowledgements</h2>
 
 <p align="center">
     <br>[Coder]<br>
@@ -109,5 +109,5 @@ $> exit
     <a href="https://github.com/PandemicOfNukes"><img src=https://avatars.githubusercontent.com/u/59929476?s=200&v=4 width=50 style="border-radius: 50%;"><br>PandemicOfNukes <br><b>        {Student}</b></a><br><br>
 </p>
 
-<h2 align="center"> Conclusion </h2>
+<h2 align="center">Conclusion</h2>
 As you can see, we made an efficient to create a wrapper in the SSH tunnel function that allows you to create your services without exposing yourself and allows the administrator to switch ports with no downtime.
