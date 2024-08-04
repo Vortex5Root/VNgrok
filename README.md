@@ -1,4 +1,4 @@
-<h1 align="center">Load Balacer SSHTunnel</h1>
+<h1 align="center">Load Balancer SSHTunnel</h1>
 <p align="center">
     <a href="https://github.com/Vortex5Root/Loadbalancer-SSHTunnel/blob/master/LICENSE"><img src="https://img.shields.io/github/license/Vortex5Root/Loadbalancer-SSHTunnel.svg" alt="License">
     <a href="https://github.com/Vortex5Root/Loadbalancer-SSHTunnel/releases"><img src="https://img.shields.io/github/downloads/Vortex5Root/Loadbalancer-SSHTunnel/total.svg" alt="GitHub all releases"></a><br>
