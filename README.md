@@ -54,14 +54,15 @@ pip install git+https://github.com/Vortex5Root/Loadbalancer-SSHTunnel.git#egg=vn
 
 <h2 align="center">How To Use</h2>
 
-1. After you CD into the directory (like in above) do the following commands:
+1. After you CD into the directory (like in above) and you used Poetry do the following commands:
 
 ```bash
 poetry install
 poetry shell
 ```
+If you didn't use Poetry ignore this step!
 
-2. After you do the above commands run the Tunnel:
+2. Run the Tunnel:
 
 ```bash
 cd ssh_tunnel && python3 __init__.py
