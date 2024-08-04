@@ -17,10 +17,6 @@ echo "Deploying the application..."
 # Pull the latest changes
 git pull origin $GITHUB_REF
 
-# Install dependencies (if any)
-# npm install
 
-# Restart the application (this is an example; update as needed)
-# pm2 restart app
 
 echo "Deployment to $GITHUB_REF branch completed."
