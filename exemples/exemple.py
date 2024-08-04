@@ -34,7 +34,7 @@ def argument_parser():
 if __name__ == "__main__":
     args = argument_parser()
     ssh_tunnel = SSH_Reverser_Tunnel(args.remote_host, args.remote_port, args.user, args.password)
-    #tunnel_0 = ReverseTunnelData(local_host="192.168.1.130", local_port=8006, remote_port=20000, listening_host="41.216.182.128", listening_port=12001)
+    #tunnel_0 = ReverseTunnelData(local_host="192.168.1.130", local_port=8006, remote_port=20000, listening_host="", listening_port=12001)
     while True:
         commnad = input("\nEnter command: ")
         if not command_handler(commnad):
