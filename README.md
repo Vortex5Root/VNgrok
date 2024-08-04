@@ -25,10 +25,10 @@
 | [Dependencies](#dependencies) | |
 | [How To Install](#how-to-install) | |
 | [How To Use](#how-to-use) | |
-| | [To start a new tunnel use:](#to-start-a-new-tunnel-use:) |
-| | [To stop the Tunnel run this command:](#to-stop-the-tunnel-run-this-command:) |
-| | [To list all the open tunnels run:](#to-list-all-the-open-tunnels-run:) |
-| | [To exit the program run:](#to-exit-the-program-run:) |
+| | [To start a new tunnel use:](#to-start-a-new-tunnel-use) |
+| | [To stop the Tunnel run this command:](#to-stop-the-tunnel-run-this-command) |
+| | [To list all the open tunnels run:](#to-list-all-the-open-tunnels-run) |
+| | [To exit the program run:](#to-exit-the-program-run) |
 | [Aknowledgements](#aknowledgements) | |
 | [Conclusion](#conclusion) | |
 
@@ -82,19 +82,19 @@ Note:
 - **<listening_host>**: The listening host is the IP that you want to listen to receive connections.
 - **<listening_port>**: The listening port is the port that you want to receive connections.
 
-<h3 align="center"> To stop the Tunnel run this command:</h3>
+<h3 align="center"> To stop the Tunnel run this command</h3>
 
 ```bash
 $> stop <remote_port>
 ```
 
-<h3 align="center"> To list all the open tunnels run:</h3>
+<h3 align="center"> To list all the open tunnels run</h3>
 
 ```bash
 $> list
 ```
 
-<h3 align="center"> To exit the program run:</h3>
+<h3 align="center"> To exit the program run</h3>
 
 ```bash
 $> exit 
