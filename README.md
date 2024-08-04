@@ -23,7 +23,7 @@
 | Name | Version | Description |
 | --- | --- | --- |
 | [![Linux](https://img.shields.io/badge/Linux-A81D33?style=for-the-badge&logo=linux&logoColor=ffffff)](https://www.linux.org/) | 5.14.0 | Linux is a family of open-source Unix-like operating systems based on the Linux kernel. |
-| [![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=ffdd54)](https://www.python.org/) | 3.9.7 | Python is an interpreted high-level general-purpose programming language. |
+| [![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=ffdd54)](https://www.python.org/) | >=3.11 | Python is an interpreted high-level general-purpose programming language. |
 | [![Poetry](https://img.shields.io/endpoint?url=https://python-poetry.org/badge/v0.json?style=for-the-badge)](https://python-poetry.org/) | 1.1.8 | Poetry is a tool for dependency management and packaging in Python. |
 
 <h2 align="center"> How To Install </h2>
@@ -39,6 +39,40 @@ cd Loadbalancer-SSHTunnel
 ```
 
 <h2 align="center"> How To Use </h2>
+1. After you CD into the directory (like in above) do the following commands:
+```bash
+poetry install
+poetry shell
+```
+2. After you do the above commands run the Tunnel:
+```bash
+cd ssh_tunnel && python3 __init__.py
+```
+
+3. After you run the Tunnel you are going to be prompted of what commands you want to run this are the following options:
+```bash
+new <local_host> <local_port> <remote_port> <listening_host> <listening_port>
+```
+- **<local_host>**: The IP of the server that you want to expose to the internet.
+- **<local_port>**: The port of the server that you want to expose to the internet.
+- **<remote_port>**: The remote port is the port responsible to host your server locally on the remote host.
+- **<listening_host>**: The listening host is the IP that you want to listen to receive connections.
+- **<listening_port>**: The listening port is the port that you want to receive connections.
+
+To stop the Tunnel run this command:
+```bash
+stop <remote_port>
+```
+
+To list all the open tunnels run:
+```bash
+list #
+```
+
+To exit the program run:
+```bash
+exit #
+```
 
 <h2 align="center"> Aknowledgements </h2>
 
