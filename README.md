@@ -10,7 +10,7 @@
     <a href="https://github.com/Vortex5Root/Loadbalacer-SSHTunnel/commits/master"><img src="https://img.shields.io/github/last-commit/Vortex5Root/Loadbalacer-SSHTunnel.svg" alt="GitHub last commit"></a>
 </p>
 
-# Introduction
+<h2 align="center">Introduction</h2>
 
 > **Loadbalacer-SSHTunnel** 
 
@@ -18,7 +18,7 @@
 | --- | --- |
 | **Trying to expose your services in a way that you don't have to expose your local IP and changing ports without switching off your services** | **We solved this problem by creating a wrapper in the SSH tunnel function to allow to host services** |
 
-# How to install
+<h3 align="center"> How to install </h3>
 
 1. Clone the repository:
 ```bash
@@ -35,7 +35,7 @@ cd Loadbalacer-SSHTunnel
 make
 ```
 
-# Aknowledgements
+<h2 align="center"> Aknowledgements </h2>
 
 [Coder]
 
@@ -55,4 +55,4 @@ make
     </div>
 </a>
 
-# Conclusion
+<h2 align="center"> Conclusion </h2>
