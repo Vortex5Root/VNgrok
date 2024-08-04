@@ -18,6 +18,14 @@
 | --- | --- |
 | **Trying to expose your services in a way that you don't have to expose your local IP and changing ports without switching off your services** | **We solved this problem by creating a wrapper in the SSH tunnel function to allow to host services** |
 
+<h2 align="center">Dependencies</h2>
+
+| Name | Version | Description |
+| --- | --- | --- |
+| [![Linux](https://img.shields.io/badge/Linux-A81D33?style=for-the-badge&logo=linux&logoColor=ffffff)](https://www.linux.org/) | 5.14.0 | Linux is a family of open-source Unix-like operating systems based on the Linux kernel. |
+| [![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=ffdd54)](https://www.python.org/) | 3.9.7 | Python is an interpreted high-level general-purpose programming language. |
+| [![Poetry](https://img.shields.io/endpoint?url=https://python-poetry.org/badge/v0.json?style=for-the-badge)](https://python-poetry.org/) | 1.1.8 | Poetry is a tool for dependency management and packaging in Python. |
+
 <h3 align="center"> How to install </h3>
 
 1. Clone the repository:
