@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "ngrokv-1-2-7"
+version = "0.1.0"
+description = ""
+authors = ["Vortex5Root"]
+readme = "README.md"
+packages = [{include = "ngrokv_1"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+sshtunnel = "^0.4.0"
+pydantic = "^2.8.2"
+pexpect = "^4.9.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
