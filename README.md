@@ -52,55 +52,6 @@ poetry add git+https://github.com/Vortex5Root/Loadbalancer-SSHTunnel.git
 pip install git+https://github.com/Vortex5Root/Loadbalancer-SSHTunnel.git#egg=vngrok
 ```
 
-<h2 align="center">How To Use</h2>
-
-1. After you CD into the directory (like in above) and you used Poetry do the following commands:
-
-```bash
-poetry install
-poetry shell
-```
-If you didn't use Poetry ignore this step!
-
-2. Run the Tunnel:
-
-```bash
-cd ssh_tunnel && python3 __init__.py
-```
-
-3. After you run the Tunnel you are going to be prompted of what commands you want to run this are the following options:
-
-<h3 align="center">To start a new tunnel use</h3>
-
-```bash
-$> new <local_host> <local_port> <remote_port> <listening_host> <listening_port>
-```
-
-Note:
-- **<local_host>**: The IP of the server that you want to expose to the internet.
-- **<local_port>**: The port of the server that you want to expose to the internet.
-- **<remote_port>**: The remote port is the port responsible to host your server locally on the remote host.
-- **<listening_host>**: The listening host is the IP that you want to listen to receive connections.
-- **<listening_port>**: The listening port is the port that you want to receive connections.
-
-<h3 align="center">To stop the Tunnel run this command</h3>
-
-```bash
-$> stop <remote_port>
-```
-
-<h3 align="center">To list all the open tunnels run</h3>
-
-```bash
-$> list
-```
-
-<h3 align="center">To exit the program run</h3>
-
-```bash
-$> exit 
-```
-
 <h2 align="center">Aknowledgements</h2>
 
 <p align="center">

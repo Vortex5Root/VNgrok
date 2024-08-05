@@ -40,4 +40,4 @@ if __name__ == "__main__":
         if not command_handler(commnad):
             break
         time.sleep(1)
-    del ssh_tunnel.tunnel_0
+    
