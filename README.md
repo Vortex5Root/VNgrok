@@ -44,6 +44,8 @@
 
 [![Poetry](https://img.shields.io/endpoint?url=https://python-poetry.org/badge/v0.json)](https://python-poetry.org/)
 ```bash
+poetry init # To create a new project
+
 poetry add git+https://github.com/Vortex5Root/Loadbalancer-SSHTunnel.git
 ```
 

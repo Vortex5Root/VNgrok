@@ -1,4 +1,4 @@
-<h1 align="center">Load Balancer SSHTunnel</h1>
+<h1 align="center"> Documentation (VNgrok) </h1>
 <p align="center">
     <a href="https://github.com/Vortex5Root/Loadbalancer-SSHTunnel/blob/master/LICENSE"><img src="https://img.shields.io/github/license/Vortex5Root/Loadbalancer-SSHTunnel.svg" alt="License">
     <a href="https://github.com/Vortex5Root/Loadbalancer-SSHTunnel/releases"><img src="https://img.shields.io/github/downloads/Vortex5Root/Loadbalancer-SSHTunnel/total.svg" alt="GitHub all releases"></a><br>
@@ -11,3 +11,27 @@
 </p>
 
 <h2 align="center">Introduction</h2>
+
+> This is a program that creates a wrapper in the SSH tunnel function that allows you to host services without exposing your local ip address and also allows for you to switch ports without switching off your services.
+
+| Problem | Solution |
+| --- | --- |
+| **Trying to expose your services in a way that you don't have to expose your local IP and changing ports without switching off your services** | **We solved this problem by creating a wrapper in the SSH tunnel function to allow to host services** |
+
+<h2 align="center"> Index </h2>
+
+| Topic | Sub-Topic |
+| --- | --- |
+| [Dependencies](#dependencies) | |
+
+
+<h2 align="center">Dependencies</h2>
+
+| Name | Version | Description |
+| --- | --- | --- |
+| [![python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=ffdd54)](https://www.python.org/) | >=3.11 | Python is an interpreted high-level general-purpose programming language. |
+| [pexpect](https://pexpect.readthedocs.io/en/stable/) | 4.8.0 | Pexpect is a pure Python module for spawning child applications; controlling them; and responding to expected patterns in their output. |
+| [pydantic](https://pydantic-docs.helpmanual.io/) | 1.8.2 | Data validation and settings management using python type annotations. |
+
+<h2 align="center">How start using?</h2>
+

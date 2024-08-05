@@ -11,12 +11,6 @@
 </p>
 <h2 align="center">How To Use</h2>
 
-1. After you CD into the directory (like in above) do the following commands:
-
-```bash
-poetry install
-poetry shell
-```
 
 2. After you do the above commands run the Tunnel:
 
