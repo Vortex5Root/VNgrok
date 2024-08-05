@@ -34,7 +34,7 @@
 [![Poetry](https://img.shields.io/endpoint?url=https://python-poetry.org/badge/v0.json)](https://python-poetry.org/)
 ```bash
 poetry init # To create a new project
-
+poetry shell # To start the shell
 poetry add git+https://github.com/Vortex5Root/VNgrok.git
 ```
 
