@@ -54,6 +54,8 @@ poetry add git+https://github.com/Vortex5Root/Loadbalancer-SSHTunnel.git
 pip install git+https://github.com/Vortex5Root/Loadbalancer-SSHTunnel.git#egg=vngrok
 ```
 
+<h2 align="center">Documentaion</h2>
+
 [![Wiki.py](https://img.shields.io/badge/wiki.js-%231976D2.svg?style=for-the-badge&logo=wikidotjs&logoColor=white)](DOCUMENTION.md)
 
 <h2 align="center">Aknowledgements</h2>
