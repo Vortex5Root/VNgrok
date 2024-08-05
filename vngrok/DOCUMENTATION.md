@@ -7,7 +7,8 @@
     <a href="https://github.com/Vortex5Root/Loadbalancer-SSHTunnel/watchers"><img src="https://img.shields.io/github/watchers/Vortex5Root/Loadbalancer-SSHTunnel.svg" alt="GitHub watchers"></a><br>
     <a href="https://github.com/Vortex5Root/Loadbalancer-SSHTunnel/issues"><img src="https://img.shields.io/github/issues/Vortex5Root/Loadbalancer-SSHTunnel.svg" alt="GitHub issues"></a>
     <a href="https://github.com/Vortex5Root/Loadbalancer-SSHTunnel/pulls"><img src="https://img.shields.io/github/issues-pr/Vortex5Root/Loadbalancer-SSHTunnel.svg" alt="GitHub pull requests"></a>
-    <a href="https://github.com/Vortex5Root/Loadbalancer-SSHTunnel/commits/master"><img src="https://img.shields.io/github/last-commit/Vortex5Root/Loadbalancer-SSHTunnel.svg" alt="GitHub last commit"></a>
+    <a href="https://github.com/Vortex5Root/Loadbalancer-SSHTunnel/commits/master"><img src="https://img.shields.io/github/last-commit/Vortex5Root/Loadbalancer-SSHTunnel.svg" alt="GitHub last commit"></a><br>
+    <a href="https://github.com/Vortex5Root/NatNetSDK_4.1.0/releases"><img src="https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--versions-e10079.svg"></a>
 </p>
 
 <h2 align="center">Introduction</h2>
