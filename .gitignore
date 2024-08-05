@@ -69,7 +69,7 @@ coverage.xml
 .hypothesis/
 .pytest_cache/
 cover/
-poetry.lock
+*.lock
 
 # Translations
 *.mo
