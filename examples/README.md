@@ -1,7 +1,7 @@
-<h1 align="center">VNgrok</h1>
+<h1 align="center">VNgrok (cli_exempla.py)</h1>
 <p align="center">
     <a href="https://github.com/Vortex5Root/VNgrok/blob/master/LICENSE"><img src="https://img.shields.io/github/license/Vortex5Root/VNgrok.svg" alt="License">
-    <a href="https://github.com/Vortex5Root/VNgrok/releases"><img src="https://img.shields.io/github/downloads/Vortex5Root/VNgrokl/total.svg" alt="GitHub all releases"></a><br>
+    <a href="https://github.com/Vortex5Root/VNgrok/releases"><img src="https://img.shields.io/github/downloads/Vortex5Root/VNgrok/total.svg" alt="GitHub all releases"></a><br>
     <a href="https://github.com/Vortex5Root/VNgrok/network"><img src="https://img.shields.io/github/forks/Vortex5Root/VNgrok.svg" alt="GitHub forks"></a>
     <a href="https://github.com/Vortex5Root/VNgrok/stargazers"><img src="https://img.shields.io/github/stars/Vortex5Root/VNgrok.svg" alt="GitHub stars"></a>
     <a href="https://github.com/Vortex5Root/VNgrok/watchers"><img src="https://img.shields.io/github/watchers/Vortex5Root/VNgrok.svg" alt="GitHub watchers"></a><br>
@@ -10,42 +10,31 @@
     <a href="https://github.com/Vortex5Root/VNgrok/commits/master"><img src="https://img.shields.io/github/last-commit/Vortex5Root/VNgrok.svg" alt="GitHub last commit"></a>
 </p>
 
+
 <h2 align="center">Introduction</h2>
 
-> VNgrok is a program that creates a wrapper in the SSH tunnel function that allows you to host services without exposing your local ip address and also allows for you to switch ports without switching off your services. 
+> This Exempla is a program how use vngronk to create a cli to integrate Load-Balancer-SSHTunnel in your project.
 
-| Problem | Solution |
-| --- | --- |
-| **Trying to expose your services in a way that you don't have to expose your local IP and changing ports without switching off your services** | **We solved this problem by creating a wrapper in the SSH tunnel function to allow to host services** |
-
-<h2 align="center"> Index </h2>
+<h2 align="center">Index</h2>
 
 | Topic | Sub-Topic |
 | --- | --- |
+| [Introduction](#introduction) | |
 | [Dependencies](#dependencies) | |
-| [How To Install](#how-to-install) | |
-| [How To Use](#how-to-use) | |
-| | [To start a new tunnel use:](#to-start-a-new-tunnel-use) |
-| | [To stop the Tunnel run this command:](#to-stop-the-tunnel-run-this-command) |
-| | [To list all the open tunnels run:](#to-list-all-the-open-tunnels-run) |
-| | [To exit the program run:](#to-exit-the-program-run) |
+| [How to Test cli_exempla](#how-to-test-cli_exempla) | |
+| [How to use the cli?](#how-to-use-the-cli) | |
 | [Aknowledgements](#aknowledgements) | |
 | [Conclusion](#conclusion) | |
 
-<h2 align="center">Dependencies</h2>
 
-| Name | Version | Description |
-| --- | --- | --- |
-| [![Linux](https://img.shields.io/badge/Linux-A81D33?style=for-the-badge&logo=linux&logoColor=ffffff)](https://www.linux.org/) | 5.14.0 | Linux is a family of open-source Unix-like operating systems based on the Linux kernel. |
-| [![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=ffdd54)](https://www.python.org/) | >=3.11 | Python is an interpreted high-level general-purpose programming language. |
-| [![Poetry](https://img.shields.io/endpoint?url=https://python-poetry.org/badge/v0.json?style=for-the-badge)](https://python-poetry.org/) | 1.1.8 | Poetry is a tool for dependency management and packaging in Python. |
+<h2 align="center">How to Test cli_exempla</h2>
 
-<h2 align="center">How To Install</h2>
+1. First you need to install the dependencies:
 
 [![Poetry](https://img.shields.io/endpoint?url=https://python-poetry.org/badge/v0.json)](https://python-poetry.org/)
 ```bash
 poetry init # To create a new project
-
+poetry shell # To start the shell
 poetry add git+https://github.com/Vortex5Root/VNgrok.git
 ```
 
@@ -54,11 +43,71 @@ poetry add git+https://github.com/Vortex5Root/VNgrok.git
 pip install git+https://github.com/Vortex5Root/VNgrok.git#egg=vngrok
 ```
 
-<h2 align="center">Documentaion</h2>
+2. After you do the above commands run the Tunnel:
 
-Click on the following image to go to the Documentaion:
+```bash
+cd examples
+```
 
-<a href=./vngrok/DOCUMENTATION.md><img src="./img/wikipedia-svgrepo-com.svg" width=50></a>
+3. Run the following command:
+
+```bash
+python cli_exempla.py
+```
+
+3.1. Help Menu:
+
+```bash
+SSH Reverser Tunnel
+
+options:
+  -h, --help            show this help message and exit
+  --remote_host REMOTE_HOST
+                        Remote host
+  --remote_port REMOTE_PORT
+                        Remote port
+  --user USER           User
+  --password PASSWORD   Password
+```
+
+4. Run the following command:
+
+```bash
+python cli_exempla.py --remote_host <remote_host> --remote_port <remote_port> --user <user> --password <password>
+```
+
+<h2 align="center">How to use the cli?</h2>
+
+<h3 align="center">To start a new tunnel use</h3>
+
+```bash
+$> new <local_host> <local_port> <remote_port> <listening_host> <listening_port>
+```
+
+Note:
+- **<local_host>**: The IP of the server that you want to expose to the internet.
+- **<local_port>**: The port of the server that you want to expose to the internet.
+- **<remote_port>**: The remote port is the port responsible to host your server locally on the remote host.
+- **<listening_host>**: The listening host is the IP that you want to listen to receive connections.
+- **<listening_port>**: The listening port is the port that you want to receive connections.
+
+<h3 align="center">To stop the Tunnel run this command</h3>
+
+```bash
+$> stop <remote_port>
+```
+
+<h3 align="center">To list all the open tunnels run</h3>
+
+```bash
+$> list
+```
+
+<h3 align="center">To exit the program run</h3>
+
+```bash
+$> exit 
+```
 
 <h2 align="center">Aknowledgements</h2>
 

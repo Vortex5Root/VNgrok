@@ -1,9 +1,12 @@
-import logging
-import pexpect
 import time
+# Logging
+import logging
+# Shell Subprocess
+import pexpect
+# Typing
+from typing import Any
 
-
-def start_logger(file_name : str):
+def start_logger(file_name : str) -> Any:
     logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
     logger = logging.getLogger(__name__)
     file_handler = logging.FileHandler(file_name)
@@ -12,7 +15,7 @@ def start_logger(file_name : str):
     logger.addHandler(file_handler)
     return logger
 
-def run_subprocess(command, stop_event, ssh_password=None):
+def run_subprocess(command, stop_event, ssh_password=None) -> None:
     run_loggs = start_logger("run_subprocess.log")
     """
     Function to run a subprocess command and terminate it if stop_event is set.
