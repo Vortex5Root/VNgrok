@@ -6,7 +6,7 @@ import threading
 from typing   import Dict, List
 from pydantic import BaseModel
 # Local Tools
-from Functions import run_subprocess, start_logger
+from vngrok.Functions import run_subprocess, start_logger
 
 class Reverse_Tunnel_Data(BaseModel):
     local_host : str
@@ -48,13 +48,13 @@ class SSH_Reverser_Tunnel:
         self.__dict__["password"] = password
         print("SSH_Reverser_Tunnel initialized.")
 
-    def build_command(self, data : ReverseTunnelData) -> List[str]:
+    def build_command(self, data : Reverse_Tunnel_Data) -> List[str]:
         command = f'sshpass -p "{self.password}" ssh -o StrictHostKeyChecking=no -R {data.remote_port}:{data.local_host}:{data.local_port} {self.user}@{self.remote_host} -p {self.remote_port}'
         #return ["sshpass","-p",f'"{self.password}"',"ssh","-o","PasswordAuthentication=yes", "-R", f"{data.remote_port}:{data.local_host}:{data.local_port}", f"{self.user}@{self.remote_host}", "-p", f"{self.remote_port}", "-vvv"]
         return command
     
-    def __setattr__(self, name: str, value: ReverseTunnelData) -> None:
-        data : ReverseTunnelData = value
+    def __setattr__(self, name: str, value: Reverse_Tunnel_Data) -> None:
+        data : Reverse_Tunnel_Data = value
         if data.remote_port not in self.tunnels["in_used_ports"]:
             command = self.build_command(data)
             stop_event = threading.Event()
