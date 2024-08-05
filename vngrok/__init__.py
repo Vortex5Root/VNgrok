@@ -52,9 +52,9 @@ class SSH_Reverser_Tunnel:
         command = f'sshpass -p "{self.password}" ssh -o StrictHostKeyChecking=no -R {data.remote_port}:{data.local_host}:{data.local_port} {self.user}@{self.remote_host} -p {self.remote_port}'
         #return ["sshpass","-p",f'"{self.password}"',"ssh","-o","PasswordAuthentication=yes", "-R", f"{data.remote_port}:{data.local_host}:{data.local_port}", f"{self.user}@{self.remote_host}", "-p", f"{self.remote_port}", "-vvv"]
         return command
+    
     def __setattr__(self, name: str, value: ReverseTunnelData) -> None:
         data : ReverseTunnelData = value
-        print("data",data)
         if data.remote_port not in self.tunnels["in_used_ports"]:
             command = self.build_command(data)
             stop_event = threading.Event()
@@ -103,39 +103,3 @@ class SSH_Reverser_Tunnel:
         else:
             self.logger.error(f"Port {name} is not in use.")
             raise ValueError(f"Port {name} is not in use.")
-
-def command_handler(command):
-    args = command.split(" ")
-    print(args)
-    if args[0] == "new":
-        data = None
-        try:
-            data = ReverseTunnelData(local_host=args[1], local_port=int(args[2]), remote_port=int(args[3]), listening_host=args[4], listening_port=int(args[5]))
-            ssh_tunnel.__setattr__(f"tunnel_{len(ssh_tunnel.tunnels['tunnels'])}", data)
-        except Exception as e:
-            print("user new <local_host> <local_port> <remote_port> <listening_host> <listening_port>")
-    elif args[0] == "stop" and len(args) == 2:
-        name = ssh_tunnel.tunnels["tunnels"][int(args[1])]["name"]
-        ssh_tunnel.__delattr__(name)
-    elif args[0] == "list":
-        [print(f"{key}: {value}", end="\t\n") for key, value in ssh_tunnel.tunnels["tunnels"].items()]
-    elif command == "exit":
-        return False
-    else:
-        print("Command not found.")
-    return True
-
-def honey():
-    server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    server.bind(("", 17))
-    server.listen(5)
-    while True:
-        client, addr = server.accept()
-        print(f"Connection from {addr}")
-        client.send("Hello".encode())
-        client.close()
-
-def socket_c2():
-    server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    server.bind(("", 4444))
-    server.listen(5)
