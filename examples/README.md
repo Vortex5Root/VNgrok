@@ -9,16 +9,74 @@
     <a href="https://github.com/Vortex5Root/Loadbalancer-SSHTunnel/pulls"><img src="https://img.shields.io/github/issues-pr/Vortex5Root/Loadbalancer-SSHTunnel.svg" alt="GitHub pull requests"></a>
     <a href="https://github.com/Vortex5Root/Loadbalancer-SSHTunnel/commits/master"><img src="https://img.shields.io/github/last-commit/Vortex5Root/Loadbalancer-SSHTunnel.svg" alt="GitHub last commit"></a>
 </p>
-<h2 align="center">How To Use</h2>
 
+
+<h2 align="center">Introduction</h2>
+
+> This Exempla is a program how use vngronk to create a cli to integrate Load-Balancer-SSHTunnel in your project.
+
+<h2 align="center">Index</h2>
+
+| Topic | Sub-Topic |
+| --- | --- |
+| [Introduction](#introduction) | |
+| [Dependencies](#dependencies) | |
+| [How to Test cli_exempla](#how-to-test-cli_exempla) | |
+| [How to use the cli?](#how-to-use-the-cli) | |
+| [Aknowledgements](#aknowledgements) | |
+| [Conclusion](#conclusion) | |
+
+
+<h2 align="center">How to Test cli_exempla</h2>
+
+1. First you need to install the dependencies:
+
+[![Poetry](https://img.shields.io/endpoint?url=https://python-poetry.org/badge/v0.json)](https://python-poetry.org/)
+```bash
+poetry init # To create a new project
+
+poetry add git+https://github.com/Vortex5Root/Loadbalancer-SSHTunnel.git
+```
+
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+```bash
+pip install git+https://github.com/Vortex5Root/Loadbalancer-SSHTunnel.git#egg=vngrok
+```
 
 2. After you do the above commands run the Tunnel:
 
 ```bash
-cd ssh_tunnel && python3 __init__.py
+cd examples
 ```
 
-3. After you run the Tunnel you are going to be prompted of what commands you want to run this are the following options:
+3. Run the following command:
+
+```bash
+python cli_exempla.py
+```
+
+3.1. Help Menu:
+
+```bash
+SSH Reverser Tunnel
+
+options:
+  -h, --help            show this help message and exit
+  --remote_host REMOTE_HOST
+                        Remote host
+  --remote_port REMOTE_PORT
+                        Remote port
+  --user USER           User
+  --password PASSWORD   Password
+```
+
+4. Run the following command:
+
+```bash
+python cli_exempla.py --remote_host <remote_host> --remote_port <remote_port> --user <user> --password <password>
+```
+
+<h2 align="center">How to use the cli?</h2>
 
 <h3 align="center">To start a new tunnel use</h3>
 

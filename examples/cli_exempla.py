@@ -1,5 +1,5 @@
 import time
-from vngrok import SSH_Reverser_Tunnel, ReverseTunnelData
+from vngrok import SSH_Reverser_Tunnel, Reverse_Tunnel_Data
 
 import argparse
 
@@ -8,7 +8,7 @@ def command_handler(command):
     if args[0] == "new":
         data = None
         try:
-            data = ReverseTunnelData(local_host=args[1], local_port=int(args[2]), remote_port=int(args[3]), listening_host=args[4], listening_port=int(args[5]))
+            data = Reverse_Tunnel_Data(local_host=args[1], local_port=int(args[2]), remote_port=int(args[3]), listening_host=args[4], listening_port=int(args[5]))
             ssh_tunnel.__setattr__(f"tunnel_{len(ssh_tunnel.tunnels['tunnels'])}", data)
         except Exception as e:
             print("user new <local_host> <local_port> <remote_port> <listening_host> <listening_port>")
