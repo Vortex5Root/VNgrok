@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "vngrok"
-version = "1.0.2"
+version = "1.0.3"
 description = "This project aims to create one network revser load balancer you allow you to expose your local server to the internet using one external machine like a vps "
 authors = ["Vortex5Root"]
 readme = "README.md"
