@@ -8,7 +8,7 @@ from pydantic import BaseModel
 # Local Tools
 from Functions import run_subprocess, start_logger
 
-class ReverseTunnelData(BaseModel):
+class Reverse_Tunnel_Data(BaseModel):
     local_host : str
     local_port : int
     remote_port : int
