@@ -27,7 +27,6 @@
 | [How To Install](#how-to-install) | |
 | [Documentation](#documentation) | |
 | [Acknowledgements](#acknowledgements) | |
-| [Conclusion](#conclusion) | |
 
 <h2 align="center">Dependencies</h2>
 
@@ -65,6 +64,3 @@ Click on the following image to go to the Documentation:
     <br>[Contributor]<br>
     <a href="https://github.com/PandemicOfNukes"><img src=https://avatars.githubusercontent.com/u/59929476?s=200&v=4 width=50 style="border-radius: 50%;"><br>PandemicOfNukes <br><b>        {Student}</b></a><br><br>
 </p>
-
-<h2 align="center">Conclusion</h2>
-As you can see, we made an efficient to create a wrapper in the SSH tunnel function that allows you to create your services without exposing yourself and allows the administrator to switch ports with no downtime.
