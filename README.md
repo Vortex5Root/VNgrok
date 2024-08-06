@@ -25,12 +25,8 @@
 | --- | --- |
 | [Dependencies](#dependencies) | |
 | [How To Install](#how-to-install) | |
-| [How To Use](#how-to-use) | |
-| | [To start a new tunnel use:](#to-start-a-new-tunnel-use) |
-| | [To stop the Tunnel run this command:](#to-stop-the-tunnel-run-this-command) |
-| | [To list all the open tunnels run:](#to-list-all-the-open-tunnels-run) |
-| | [To exit the program run:](#to-exit-the-program-run) |
-| [Aknowledgements](#aknowledgements) | |
+| [Documentation](#documentation) | |
+| [Acknowledgements](#acknowledgements) | |
 | [Conclusion](#conclusion) | |
 
 <h2 align="center">Dependencies</h2>
@@ -55,13 +51,13 @@ poetry add git+https://github.com/Vortex5Root/VNgrok.git
 pip install git+https://github.com/Vortex5Root/VNgrok.git#egg=vngrok
 ```
 
-<h2 align="center">Documentaion</h2>
+<h2 align="center">Documentation</h2>
 
-Click on the following image to go to the Documentaion:
+Click on the following image to go to the Documentation:
 
 <a href=./vngrok/DOCUMENTATION.md><img src="./img/wikipedia-svgrepo-com.svg" width=50></a> 
 
-<h2 align="center">Aknowledgements</h2>
+<h2 align="center">Acknowledgements</h2>
 
 <p align="center">
     <br>[Coder]<br>
