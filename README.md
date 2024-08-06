@@ -58,7 +58,7 @@ pip install git+https://github.com/Vortex5Root/VNgrok.git#egg=vngrok
 
 Click on the following image to go to the Documentaion:
 
-<a href=./vngrok/DOCUMENTATION.md><img src="./img/wikipedia-svgrepo-com.svg" width=50></a>
+<a href=./vngrok/DOCUMENTATION.md><img src="./img/wikipedia-svgrepo-com.svg" width=50></a> 
 
 <h2 align="center">Aknowledgements</h2>
 
