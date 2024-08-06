@@ -1,7 +1,7 @@
 <h1 align="center">VNgrok</h1>
 <p align="center">
     <a href="https://github.com/Vortex5Root/VNgrok/blob/master/LICENSE"><img src="https://img.shields.io/github/license/Vortex5Root/VNgrok.svg" alt="License">
-    <a href="https://github.com/Vortex5Root/VNgrok/releases"><img src="https://img.shields.io/github/downloads/Vortex5Root/VNgrokl/total.svg" alt="GitHub all releases"></a><br>
+    <a href="https://github.com/Vortex5Root/VNgrok/releases"><img src="https://img.shields.io/github/downloads/Vortex5Root/VNgrok/total.svg" alt="GitHub all releases"></a><br>
     <a href="https://github.com/Vortex5Root/VNgrok/network"><img src="https://img.shields.io/github/forks/Vortex5Root/VNgrok.svg" alt="GitHub forks"></a>
     <a href="https://github.com/Vortex5Root/VNgrok/stargazers"><img src="https://img.shields.io/github/stars/Vortex5Root/VNgrok.svg" alt="GitHub stars"></a>
     <a href="https://github.com/Vortex5Root/VNgrok/watchers"><img src="https://img.shields.io/github/watchers/Vortex5Root/VNgrok.svg" alt="GitHub watchers"></a><br>
