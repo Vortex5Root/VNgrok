@@ -91,7 +91,7 @@ class SSH_Reverser_Tunnel:
             self.logger.info(f"Reverse tunnel stopped on port {data['remote_port']}")
             kill_port = f"sshpass -p '{self.password}' ssh -o StrictHostKeyChecking=no -p {self.remote_port} {self.user}@{self.remote_host} -O exit"
             kill_port += f"kill $(lsof -t -i:{data['remote_port']})"
-            run_subprocess(kill_port)
+            run_subprocess(kill_port, data["stop_event"])
             del self.tunnels["tunnels"][port]
             del self.__dict__[name]
         else:
