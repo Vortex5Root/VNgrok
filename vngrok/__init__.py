@@ -89,7 +89,8 @@ class SSH_Reverser_Tunnel:
             #data["thread"].join()
             self.tunnels["in_used_ports"].remove(data["remote_port"])
             self.logger.info(f"Reverse tunnel stopped on port {data['remote_port']}")
-            kill_port = f"kill $(lsof -t -i:{data['remote_port']})"
+            kill_port = f"sshpass -p '{self.password}' ssh -o StrictHostKeyChecking=no -p {self.remote_port} {self.user}@{self.remote_host} -O exit"
+            kill_port += f"kill $(lsof -t -i:{data['remote_port']})"
             run_subprocess(kill_port)
             del self.tunnels["tunnels"][port]
             del self.__dict__[name]
