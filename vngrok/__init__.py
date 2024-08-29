@@ -87,8 +87,7 @@ class SSH_Reverser_Tunnel:
             self.logger.info(f"Reverse tunnel stopped on port {data['remote_port']}")
             kill_port = f"sshpass -p '{self.password}' ssh -o StrictHostKeyChecking=no -p {self.remote_port} {self.user}@{self.remote_host} -O exit"
             kill_port += f"kill $(lsof -t -i:{data['remote_port']})"
-            threading.Thread(target=run_subprocess, args=(kill_port, threading.Event())).start()
-            time.sleep(0.1)
+            os.system(kill_port)
             data["listening"].stop_event.set()
             data["stop_event"].set()
             #data["thread"].join()
