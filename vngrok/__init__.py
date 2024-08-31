@@ -26,11 +26,11 @@ class SSH_Listener:
         self.thread = None
 
     def build_command(self):
-        return f"sshpass -p '{self.password}' ssh -L {self.listening_host}:{self.listening_port}:localhost:{self.local_port} -N root@localhost"
+        return f"sshpass -p '{self.password}' ssh -o StrictHostKeyChecking=no -L {self.listening_host}:{self.listening_port}:localhost:{self.local_port} -N root@localhost"
     
     def start(self,host,port,username,password):
         command = self.build_command()
-        command = f'sshpass -p "{password}" ssh -o StrictHostKeyChecking=no  -p {port} {username}@{host} "{command}"'
+        command = f'sshpass -p "{password}" ssh -o StrictHostKeyChecking=no -p {port} {username}@{host} "{command}"'
         self.thread = threading.Thread(target=run_subprocess, args=(command, self.stop_event))
         self.thread.start()
 
@@ -50,7 +50,7 @@ class SSH_Reverser_Tunnel:
         print("SSH_Reverser_Tunnel initialized.")
 
     def build_command(self, data : Reverse_Tunnel_Data) -> List[str]:
-        command = f'sshpass -p "{self.password}" ssh -o StrictHostKeyChecking=no -R {data.remote_port}:{data.local_host}:{data.local_port} {self.user}@{self.remote_host} -p {self.remote_port}'
+        command = f'sshpass -p "{self.password}" ssh -o StrictHostKeyChecking=no -R {data.remote_port}:{data.local_host}:{data.local_port} -N {self.user}@{self.remote_host} -p {self.remote_port}'
         #return ["sshpass","-p",f'"{self.password}"',"ssh","-o","PasswordAuthentication=yes", "-R", f"{data.remote_port}:{data.local_host}:{data.local_port}", f"{self.user}@{self.remote_host}", "-p", f"{self.remote_port}", "-vvv"]
         return command
     
